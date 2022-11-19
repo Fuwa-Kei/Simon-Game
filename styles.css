@@ -9,6 +9,10 @@ body {
     .container {
         width: 350px;   
     }
+    .btn {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .container {
