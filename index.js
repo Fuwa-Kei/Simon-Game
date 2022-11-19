@@ -11,7 +11,7 @@ var level = 0;
 
 // detect keyboard press to start game 
 // check if game has started or not 
-$(document).keypress(function() {
+$(".game-start").click(function() {
     // start game at level 0 - changing the header to reflect level 
     if (!start) {
         $(".game-start").text("Level " + level);
@@ -84,7 +84,7 @@ if (userPattern[currentLevel] === gamePattern[currentLevel]) {
     setTimeout (function () {
         $("body").removeClass("lose");}, 200);
 
-    $("h1").html("GAME OVER<br>Press any key to start again");
+    $(".game-start").html("GAME OVER<br>Start again");
 
     // reset the level/game
     level = 0;
