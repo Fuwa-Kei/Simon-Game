@@ -5,25 +5,15 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media and screen only (max-width: 390px) {
-    .container {
-        width: 350px;   
-    }
-    .btn {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 .container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 30px;
     justify-content: center;
+    gap: 30px;
 }
 .instructions {
-    padding-right: 30px;
+    margin-left: 30px;
 }
 
 .game {
@@ -59,4 +49,15 @@ body {
 
 .lose {
     background-color: darkred;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 350px;   
+    }
+
+    .btn {
+        width: 150px;
+        height: 150px;
+    }
 }
